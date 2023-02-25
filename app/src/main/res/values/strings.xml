@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Self</string>
+    <string name="app_title">SELF JOURNAL</string>
+    <string name="app_t">What are you grateful for today</string>
+    <string name="app_na">GET STARTED</string>
+    <string name="email_hint">Email</string>
+    <string name="app_pass">Password</string>
+    <string name="app_sign">SIGN</string>
+    <string name="login">LOGIN</string>
+    <string name="app_or">or</string>
+    <string name="create">CREATE ACCOUNT</string>
+    <string name="username">username</string>
+    <string name="title">Title</string>
+    <string name="menutitle">ADD</string>
+    <string name="menusign">SIGN OUT</string>
+    <string name="today">Today</string>
+    <string name="addjounral">Write a Journal by clicking the \"+\" icon</string>
+    <string name="thoughts">Thoughts.....</string>
+</resources>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="5dp"
+    android:padding="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:elevation="10dp"
+        android:background="@color/colorAeneter"
+        android:alpha="0.8"
+        android:gravity="end"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rayjjj"
+            android:id="@+id/journalrow_username"
+            android:padding="3dp"
+            android:layout_weight="1"
+            android:textSize="17sp"
+            android:gravity="start"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/journalrow_sharebtn"
+            android:src="@android:drawable/ic_menu_share"
+            android:background="@android:color/transparent"
+
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sunshine1"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+            android:scaleType="fitXY"
+            android:id="@+id/journalrow_img"
+            />
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:id="@+id/journalrow_title"
+            android:padding="10dp"
+            android:text="Title"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:id="@+id/journalthought_title"
+            android:padding="10dp"
+            android:text="@string/thoughts"
+            android:paddingTop="15dp"
+            android:paddingEnd="15dp"
+            android:paddingStart="10dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/timestamp"
+            android:text="Date added"
+            android:padding="5dp"
+            android:textStyle="italic"
+            />
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

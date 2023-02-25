@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_bg"
+    android:layout_height="match_parent"
+    tools:context=".Postjournal">
+
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="290dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:layout_marginBottom="8dp"
+                app:srcCompat="@drawable/sunshine1" />
+
+            <TextView
+                android:id="@+id/post_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="210dp"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/post_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/post_name"
+                android:layout_marginStart="14dp"
+                android:textSize="18sp"
+                android:text="@string/today" />
+
+            <ImageView
+                android:id="@+id/post_camera"
+                android:layout_width="62dp"
+                android:layout_height="61dp"
+                android:layout_marginStart="170dp"
+                android:layout_marginTop="135dp"
+                app:srcCompat="@android:drawable/ic_menu_camera"
+
+                />
+
+
+        </RelativeLayout>
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/input_outputline"
+        android:layout_margin="9dp"
+        android:hint="@string/title" />
+
+    <EditText
+        android:id="@+id/thought"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:textSize="19sp"
+        android:background="@drawable/input_outputline"
+        android:layout_margin="9dp"
+        android:hint="Thoughts" />
+
+    <ProgressBar
+        android:id="@+id/post_progess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="9dp" />
+
+    <Button
+        android:id="@+id/postbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="0dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        android:text="SAVE"
+         />
+</LinearLayout>
